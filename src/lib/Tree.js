@@ -48,7 +48,6 @@ class Tree {
      * @param {Function} callback
      */
     recursiveTraverse(callback) {
-        console.log('Hello from recursive traversion!');
         (function recurse(currentNode) {
             for (let child of currentNode.children) {
                 recurse(child);
@@ -62,7 +61,6 @@ class Tree {
      * @param  {Function} callback
      */
     iterativeTraverse(callback) {
-        console.log('Hello from iterative traversion!');
         const queue = new Queue();
         queue.enqueue(this._root);
 
