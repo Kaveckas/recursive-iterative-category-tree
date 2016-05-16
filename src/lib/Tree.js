@@ -1,5 +1,5 @@
-const Queue = require('./Queue');
-const Node = require('./Node');
+import Queue from './Queue';
+import Node from './Node';
 
 class Tree {
     /**
