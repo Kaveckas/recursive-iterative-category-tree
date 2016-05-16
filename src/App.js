@@ -52,7 +52,7 @@ class App extends Component {
             <CategoryTree tree={this.state.tree} />
             <form onSubmit={this.onSubmit.bind(this)}>
                 <input type="text" placeholder="Child" ref="child" />
-                <input type="text" placeholder="Parent" ref="parent" />
+                <input type="text" placeholder="Parent, e.g `Root`" ref="parent" />
                 <select ref="type">
                     <option value="iterate">Iterate</option>
                     <option value="recurese">Recurse</option>
