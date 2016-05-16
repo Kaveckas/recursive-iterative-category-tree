@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import CategoryTree from './CategoryTree';
-import CategoryForm from './CategoryForm';
 
 class App extends Component {
     constructor() {
@@ -63,5 +62,9 @@ class App extends Component {
         </div>
     }
 }
+
+App.propTypes = {
+    tree: PropTypes.object.isRequired
+};
 
 export default App;

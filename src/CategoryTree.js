@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 const CategoryTree = ({ tree }) => (
     <ul>
@@ -12,5 +12,9 @@ const CategoryTree = ({ tree }) => (
         </li>
     </ul>
 );
+
+CategoryTree.propTypes = {
+    tree: PropTypes.object.isRequired
+};
 
 export default CategoryTree;
