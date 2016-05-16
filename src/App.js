@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CategoryTree from './CategoryTree';
+import CategoryForm from './CategoryForm';
 
 class App extends Component {
     constructor() {

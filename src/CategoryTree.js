@@ -1,7 +1,7 @@
 import React from 'react';
 
-const CategoryTree = ({ tree }) => {
-    return <ul>
+const CategoryTree = ({ tree }) => (
+    <ul>
         <li>
             {tree.data}
             {tree.children ?
@@ -11,6 +11,6 @@ const CategoryTree = ({ tree }) => {
             : null}
         </li>
     </ul>
-};
+);
 
 export default CategoryTree;
